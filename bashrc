@@ -2,7 +2,7 @@ export TERM=xterm-256color
 
 export NODE_PATH=/usr/local/lib/node_modules
 
-alias ls='ls -G'
+alias ls='ls -FG'
 alias ll='ls -l'
 alias la='ls -a'
 
