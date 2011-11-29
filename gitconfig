@@ -1,0 +1,21 @@
+[user]
+  name = Hoon Cho
+  email = soohoon90@gmail.com
+[github]
+  user = soohoon90@gmail.com
+
+[alias]
+  unstage = reset HEAD
+  co = checkout
+  st = status
+  priase = blame
+  br = branch
+  
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+  interactive = auto
+
+
