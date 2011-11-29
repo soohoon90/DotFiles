@@ -13,7 +13,6 @@ set showmatch
 
 set t_Co=256 "enable 256 colors
 set background=dark
-colorscheme solarized 
 syntax enable "turn on syntax highlighting
 
 set expandtab
@@ -25,4 +24,5 @@ set ai
 set si
 set wrap
 
-nmap g i<cr><Esc>
+"enable?
+"colorscheme solarized
