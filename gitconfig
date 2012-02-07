@@ -7,10 +7,17 @@
 [alias]
   unstage = reset HEAD
   co = checkout
+  ci = commit
   st = status
   priase = blame
   br = branch
-  
+  tree = log --graph --pretty=oneline --decorate
+  log = log --decorate
+  pom = push origin master
+  phm = push heroku master
+  amend = commit --amend -C HEAD
+
+
 [color]
   diff = auto
   status = auto
