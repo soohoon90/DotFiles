@@ -29,7 +29,7 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 
 # extend ls
-if [ `uname` == "Darwin" ]; then 
+if [[ `uname` == "Darwin" ]]; then 
    alias ls='ls -GF' 
 else 
    eval "`dircolors -b`" 
@@ -49,7 +49,7 @@ alias more='less'
 alias diskspace="du -S | sort -n -r |more" 
 
 # quick reloading of rc files
-if [ `uname` == "Darwin" ]; then 
+if [[ `uname` == "Darwin" ]]; then 
   alias rc='vim ~/.profile'
   alias rrc='source ~/.profile'
 else 
@@ -60,7 +60,7 @@ alias vrc='vim ~/.vimrc'
 
 # functions
 mkcd() { 
-    if [ $# != 1 ]; then 
+    if [[ $# != 1 ]]; then 
         echo "Usage: mkcd <dir>" 
     else 
         mkdir -p $1 && cd $1 
@@ -69,7 +69,7 @@ mkcd() {
 
 function extract()      # Handy Extract Program.
 {
-     if [ -f $1 ] ; then
+     if [[ -f $1 ]] ; then
          case $1 in
              *.tar.bz2)   tar xvjf $1     ;;
              *.tar.gz)    tar xvzf $1     ;;
