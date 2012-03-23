@@ -32,7 +32,7 @@ backup_and_replace_with(){
 
 merge_folder(){
   if [ -d $mydir/$1 ]; then
-    cp -r $mydir/$1 $dest/.$1
+    cp -r $mydir/$1/ $dest/.$1
     echo "$1 folder was merged with ~/.$1"
   else
     echo "$1 doesn't exist"
